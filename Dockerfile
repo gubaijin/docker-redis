@@ -1,3 +1,3 @@
 FROM redis
-ADD redis.conf /usr/local/etc/redis/redis.conf
-CMD [ "redis-server", "/usr/local/etc/redis/redis.conf" ]
+COPY redis.conf /data/
+CMD [ "redis-server","/data/redis.conf" ]
